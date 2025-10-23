@@ -38,8 +38,7 @@
 </head>
 <body class="antialiased text-gray-800">
 
-    <!-- Header & Navigation -->
-    <!-- Header & Navigation -->
+  <!-- Header & Navigation -->
 <header class="bg-white shadow-md sticky top-0 z-10">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
 
@@ -54,7 +53,7 @@
       </div>
     </div>
 
-    <!-- Navigation Links -->
+    <!-- Navigation Links (Desktop) -->
     <nav class="hidden md:flex space-x-8 text-lg font-medium">
       <a href="#mission" class="hover:text-primary transition duration-300">Mission</a>
       <a href="#services" class="hover:text-primary transition duration-300">Services</a>
@@ -62,7 +61,7 @@
       <a href="#about" class="hover:text-primary transition duration-300">About Us</a>
     </nav>
 
-    <!-- CTA Buttons -->
+    <!-- CTA Buttons (Desktop) -->
     <div class="hidden md:flex items-center space-x-3">
       <a href="#contact" class="bg-primary text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
         Get Started
@@ -73,9 +72,21 @@
     </div>
 
     <!-- Mobile Menu Button -->
-    <button class="md:hidden p-2 text-gray-600 hover:text-primary rounded-md">
+    <button id="menu-btn" class="md:hidden p-2 text-gray-600 hover:text-primary rounded-md">
       <i data-lucide="menu" class="w-6 h-6"></i>
     </button>
+  </div>
+
+  <!-- Mobile Navigation Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+    <nav class="flex flex-col items-center py-4 space-y-4 text-lg font-medium">
+      <a href="#mission" class="hover:text-primary">Mission</a>
+      <a href="#services" class="hover:text-primary">Services</a>
+      <a href="#education" class="hover:text-primary">Education</a>
+      <a href="#about" class="hover:text-primary">About Us</a>
+      <a href="#contact" class="bg-primary text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:bg-indigo-700">Get Started</a>
+      <a href="#contact" class="bg-accent text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:bg-cyan-600">Join Us / Collaborate</a>
+    </nav>
   </div>
 </header>
 
