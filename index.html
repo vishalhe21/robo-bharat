@@ -5,27 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robo Bharat Technologies</title>
 
-  <!-- Tailwind CSS -->
+  <!-- 🌈 Tailwind CSS for modern styling -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Lucide Icons -->
+  <!-- ⚙️ Lucide Icons Library -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <style>
+    /* 🧩 Importing Google Font */
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+    /* 🎨 Defining brand colors */
     :root {
       --color-primary: #4f46e5; /* Indigo 600 */
       --color-accent: #06b6d4;  /* Cyan 500 */
     }
+
+    /* 🌐 Basic body styling */
     body {
       font-family: 'Inter', sans-serif;
       background-color: #f9fafb;
     }
+
     .text-accent { color: var(--color-accent); }
     .bg-primary-dark { background-color: #1e293b; }
   </style>
 
   <script>
+    /* ⚙️ Tailwind custom color extension */
     tailwind.config = {
       theme: {
         extend: {
@@ -38,13 +45,14 @@
     }
   </script>
 </head>
+
 <body class="antialiased text-gray-800">
 
-  <!-- Header -->
+  <!-- 🧭 HEADER START -->
   <header class="bg-white shadow-md sticky top-0 z-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
 
-      <!-- Logo -->
+      <!-- 🪫 LOGO SECTION -->
       <div class="flex items-center space-x-3">
         <img src="robo-bharat-logo.png" alt="Robo Bharat Logo" class="h-10 w-auto">
         <div>
@@ -55,7 +63,7 @@
         </div>
       </div>
 
-      <!-- Navigation Links (Desktop) -->
+      <!-- 🧭 NAVIGATION LINKS (Desktop View) -->
       <nav class="hidden md:flex space-x-8 text-lg font-medium">
         <a href="#mission" class="hover:text-primary transition duration-300">Mission</a>
         <a href="#services" class="hover:text-primary transition duration-300">Services</a>
@@ -63,313 +71,193 @@
         <a href="#about" class="hover:text-primary transition duration-300">About Us</a>
       </nav>
 
-      <!-- CTA Buttons -->
+      <!-- 🚀 CTA Button for Collaboration -->
       <div class="hidden md:flex items-center space-x-3">
-        </button>
         <a href="#contact" class="bg-accent text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:bg-cyan-600 transition transform hover:scale-105">
           Join Us / Collaborate
         </a>
       </div>
 
-      <!-- Mobile Menu Button -->
+      <!-- 📱 Mobile Menu Button -->
       <button id="menu-btn" class="md:hidden p-2 text-gray-600 hover:text-primary rounded-md">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
     </div>
 
-    <!-- Mobile Menu -->
+    <!-- 📱 MOBILE MENU SECTION -->
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
       <nav class="flex flex-col items-center py-4 space-y-4 text-lg font-medium">
         <a href="#mission" class="hover:text-primary">Mission</a>
         <a href="#services" class="hover:text-primary">Services</a>
         <a href="#education" class="hover:text-primary">Education</a>
         <a href="#about" class="hover:text-primary">About Us</a>
-        </button>
         <a href="#contact" class="bg-accent text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:bg-cyan-600">
           Join Us / Collaborate
         </a>
       </nav>
     </div>
   </header>
+  <!-- 🧭 HEADER END -->
 
-  
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-indigo-50 to-white py-20 sm:py-24" id="home">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-4">
-                The Future is Automated. <span class="block text-primary">The Future is Indian.</span>
-            </h1>
-            <p class="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-                Empowering the Next Generation. Innovating Today’s Industries.
-            </p>
-            <p class="text-lg text-gray-700 mb-12 max-w-4xl mx-auto">
-                Robo Bharat Technologies is a pioneering Indian robotics and automation firm dedicated to shaping the nation's future through cutting-edge technology and next-generation skill development. We stand at the intersection of advanced engineering and transformative education, committed to making India a global leader in intelligent automation.
-            </p>
-            <a href="#services" class="bg-accent text-white px-10 py-4 rounded-xl text-xl font-bold shadow-lg hover:bg-cyan-600 transition duration-300 transform hover:scale-105 inline-flex items-center">
-                Discover Our Solutions
-                <i data-lucide="arrow-right" class="w-5 h-5 ml-3"></i>
-            </a>
-        </div>
-    </section>
 
-    <!-- Our Core Mission: The Three Pillars -->
-    <section class="py-16 sm:py-24 bg-white" id="mission">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-extrabold text-center mb-4">
-                Our <span class="text-accent">Core Mission:</span> The Three Pillars
-            </h2>
-            <p class="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-                Our entire operation is focused on three strategic objectives that drive technological and societal progress in India.
-            </p>
+  <!-- 🌍 HERO SECTION START -->
+  <section class="bg-gradient-to-br from-indigo-50 to-white py-20 sm:py-24" id="home">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-4">
+        The Future is Automated. <span class="block text-primary">The Future is Indian.</span>
+      </h1>
+      <p class="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+        Empowering the Next Generation. Innovating Today’s Industries.
+      </p>
+      <p class="text-lg text-gray-700 mb-12 max-w-4xl mx-auto">
+        Robo Bharat Technologies is a pioneering Indian robotics and automation firm...
+      </p>
+      <a href="#services" class="bg-accent text-white px-10 py-4 rounded-xl text-xl font-bold shadow-lg hover:bg-cyan-600 transition transform hover:scale-105 inline-flex items-center">
+        Discover Our Solutions
+        <i data-lucide="arrow-right" class="w-5 h-5 ml-3"></i>
+      </a>
+    </div>
+  </section>
+  <!-- 🌍 HERO SECTION END -->
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Pillar 1: Empower -->
-                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-primary hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
-                    <i data-lucide="graduation-cap" class="w-10 h-10 text-primary mb-4"></i>
-                    <h3 class="text-2xl font-bold mb-3">1. Empower</h3>
-                    <p class="font-semibold text-primary mb-3">Skill Development & Education</p>
-                    <p class="text-gray-600">We bridge the skills gap by offering hands-on, project-based training in Robotics, AI, Coding, and IoT. Our goal is to empower students and professionals to become creators, not just consumers, of future technology.</p>
-                </div>
 
-                <!-- Pillar 2: Innovate -->
-                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-accent hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
-                    <i data-lucide="lightbulb" class="w-10 h-10 text-accent mb-4"></i>
-                    <h3 class="text-2xl font-bold mb-3">2. Innovate</h3>
-                    <p class="font-semibold text-accent mb-3">Research & Development</p>
-                    <p class="text-gray-600">We foster a culture of continuous innovation, designing and developing smart, indigenous technological solutions. We innovate across sectors to solve real-world Indian challenges with world-class engineering.</p>
-                </div>
+  <!-- 🏗️ MISSION SECTION -->
+  <section class="py-16 sm:py-24 bg-white" id="mission">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-extrabold text-center mb-4">
+        Our <span class="text-accent">Core Mission:</span> The Three Pillars
+      </h2>
+      <p class="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+        Focused on three strategic objectives for India's technological growth.
+      </p>
 
-                <!-- Pillar 3: Automate -->
-                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-indigo-500 hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
-                    <i data-lucide="robot" class="w-10 h-10 text-indigo-500 mb-4"></i>
-                    <h3 class="text-2xl font-bold mb-3">3. Automate</h3>
-                    <p class="font-semibold text-indigo-500 mb-3">Industrial Solutions & Services</p>
-                    <p class="text-gray-600">We accelerate digital transformation for businesses and industries. We automate repetitive and complex processes using robotics and AI to enhance productivity, improve safety, and ensure operational excellence.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- The Robo Bharat Difference & Integrated Approach -->
-    <section class="py-16 sm:py-24 bg-gray-50" id="about">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-extrabold text-center mb-12">
-                The <span class="text-primary">Robo Bharat</span> Difference
-            </h2>
-
-            <div class="grid md:grid-cols-2 gap-12 items-start">
-                <!-- Difference 1: Indigenous Excellence -->
-                <div class="bg-white p-8 rounded-xl shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <i data-lucide="shield-check" class="w-8 h-8 text-primary mr-3"></i>
-                        <h3 class="text-2xl font-bold text-gray-900">Indigenous Excellence (Atmanirbhar Bharat)</h3>
-                    </div>
-                    <p class="text-gray-600">We are proud to be Made in India. Our technology, curriculum, and solutions are designed, engineered, and manufactured domestically, fostering self-reliance and contributing directly to the growth of India's tech ecosystem.</p>
-                </div>
-
-                <!-- Difference 2: Integrated Approach -->
-                <div class="bg-white p-8 rounded-xl shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <i data-lucide="link" class="w-8 h-8 text-accent mr-3"></i>
-                        <h3 class="text-2xl font-bold text-gray-900">Integrated Ecosystem Approach</h3>
-                    </div>
-                    <p class="text-gray-600">Unlike companies that focus solely on either education or industrial application, we offer a complete ecosystem. The revenue from our automation projects fuels cutting-edge research, which, in turn, keeps our educational curriculum at the forefront of global technology.</p>
-                </div>
-
-                <!-- Vision Statement -->
-                <div class="md:col-span-2 mt-8 text-center bg-indigo-50 p-8 rounded-xl border border-indigo-200">
-                    <h4 class="text-xl font-semibold text-primary mb-3">Our Vision</h4>
-                    <p class="text-2xl italic text-gray-700">
-                        "Our vision is to drive India's transformation into a global technological superpower by cultivating a digitally skilled workforce and deploying indigenous robotics solutions that redefine efficiency and innovation across every major industry."
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Focus on Future Sectors -->
-    <section class="py-16 sm:py-24" id="sectors">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-extrabold text-center mb-12">
-                Focus on <span class="text-accent">Future Sectors</span>
-            </h2>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Sector 1: Education (EdTech) -->
-                <div class="bg-white p-6 rounded-xl shadow-md border-b-2 border-primary">
-                    <i data-lucide="book-open" class="w-8 h-8 text-primary mb-3"></i>
-                    <h3 class="text-xl font-bold mb-2">Education (EdTech)</h3>
-                    <p class="text-gray-600">Establishing modern Robotics & AI labs and providing certified training programs to build the workforce of tomorrow.</p>
-                </div>
-
-                <!-- Sector 2: Manufacturing (Industry 4.0) -->
-                <div class="bg-white p-6 rounded-xl shadow-md border-b-2 border-accent">
-                    <i data-lucide="factory" class="w-8 h-8 text-accent mb-3"></i>
-                    <h3 class="text-xl font-bold mb-2">Manufacturing (Industry 4.0)</h3>
-                    <p class="text-gray-600">Implementing collaborative robots (cobots) and automated assembly lines for enhanced precision and efficiency.</p>
-                </div>
-
-                <!-- Sector 3: Agriculture (AgriTech) -->
-                <div class="bg-white p-6 rounded-xl shadow-md border-b-2 border-indigo-500">
-                    <i data-lucide="tractor" class="w-8 h-8 text-indigo-500 mb-3"></i>
-                    <h3 class="text-xl font-bold mb-2">Agriculture (AgriTech)</h3>
-                    <p class="text-gray-600">Developing smart, automated systems for precision farming and resource management across India.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education / Training Page Snippet -->
-    <section class="py-16 bg-gradient-to-r from-white to-primary/5 border-t border-b border-gray-200" id="education">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="md:flex md:items-center md:justify-between">
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
-                        Master the Future: <span class="text-primary">Robotics & AI Training</span>
-                    </h2>
-                    <p class="text-lg text-gray-600 mb-6">
-                        Our certified courses move beyond theory. We provide students, from school-level to post-graduate, with immersive, hands-on experience using industry-standard equipment. Join us to learn the skills demanded by Industry 4.0 and secure your place as a future innovator.
-                    </p>
-                    <a href="#" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-indigo-700 transition duration-300 transform hover:scale-105 inline-block">
-                        View Certified Courses
-                    </a>
-                </div>
-                <div class="md:w-1/2 mt-10 md:mt-0 md:pl-12">
-                    <!-- Placeholder for educational image/graphic -->
-                    <div class="bg-indigo-100 rounded-xl p-6 text-center shadow-lg border-4 border-white">
-                        <i data-lucide="cpu" class="w-16 h-16 mx-auto text-primary mb-3"></i>
-                        <p class="text-lg font-medium text-primary">Hands-on, Project-Based Learning</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services / Solutions Page Snippet -->
-    <section class="py-16 sm:py-24" id="services">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="md:flex md:items-center md:justify-between flex-row-reverse">
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
-                        Intelligent Automation for <span class="text-accent">Peak Performance</span>
-                    </h2>
-                    <p class="text-lg text-gray-600 mb-6">
-                        We partner with businesses to analyze, design, and implement customized robotic and automation systems. From automated warehousing and quality inspection to bespoke robotic arms, our solutions guarantee a clear return on investment through reduced costs and maximized output.
-                    </p>
-                    <a href="#contact" class="bg-accent text-white px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-cyan-600 transition duration-300 transform hover:scale-105 inline-block">
-                        Schedule a Free Automation Consultation
-                    </a>
-                </div>
-                <div class="md:w-1/2 mt-10 md:mt-0 md:pr-12">
-                    <!-- Placeholder for industrial image/graphic -->
-                    <div class="bg-cyan-100 rounded-xl p-6 text-center shadow-lg border-4 border-white">
-                        <i data-lucide="scan" class="w-16 h-16 mx-auto text-accent mb-3"></i>
-                        <p class="text-lg font-medium text-accent">Custom Robotic & AI Systems</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Footer -->
-    <section class="bg-primary-dark py-16" id="contact">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-extrabold text-white mb-4">
-                Ready to Shape the Future with Robo Bharat?
-            </h2>
-            <p class="text-xl text-indigo-200 mb-8">
-                Join the movement towards an automated, skilled, and self-reliant India.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#education" class="bg-white text-primary border border-primary px-8 py-3 rounded-xl text-lg font-bold shadow-lg hover:bg-indigo-50 transition duration-300 transform hover:scale-105">
-                    Explore Careers
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-<section id="contact" class="bg-gray-50 py-16">
-  <div class="max-w-4xl mx-auto text-center px-6">
-    <h2 class="text-3xl font-bold mb-6 text-gray-800">Contact Us</h2>
-    <p class="text-gray-600 mb-10">
-      Have questions, collaborations, or project ideas? Reach out to <b>Robo Bharat Technologies</b> — we’d love to connect and innovate together.
-    </p>
-
-    <form action="https://formspree.io/f/mzzjlddo" method="POST" class="bg-white shadow-lg rounded-2xl p-8 text-left border border-gray-200">
-      <div class="grid md:grid-cols-2 gap-6">
-        <div>
-          <label class="block text-gray-700 mb-2 font-semibold">Full Name</label>
-          <input type="text" name="name" placeholder="Your Full Name" required
-            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      <!-- 💡 3 Mission Cards -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Empower -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-primary hover:-translate-y-1 transition">
+          <i data-lucide="graduation-cap" class="w-10 h-10 text-primary mb-4"></i>
+          <h3 class="text-2xl font-bold mb-3">Empower</h3>
+          <p class="text-gray-600">Hands-on learning for robotics, AI, coding & IoT.</p>
         </div>
 
-        <div>
-          <label class="block text-gray-700 mb-2 font-semibold">Email Address</label>
-          <input type="email" name="email" placeholder="you@example.com" required
-            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <!-- Innovate -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-accent hover:-translate-y-1 transition">
+          <i data-lucide="lightbulb" class="w-10 h-10 text-accent mb-4"></i>
+          <h3 class="text-2xl font-bold mb-3">Innovate</h3>
+          <p class="text-gray-600">Creating indigenous robotic & AI solutions.</p>
         </div>
 
-        <div>
-          <label class="block text-gray-700 mb-2 font-semibold">Designation</label>
-          <input type="text" name="designation" placeholder="e.g. Student, Teacher, Engineer"
-            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-        </div>
-
-        <div>
-          <label class="block text-gray-700 mb-2 font-semibold">Contact Number</label>
-          <input type="tel" name="contact" placeholder="+91 9876543210" required
-            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-        </div>
-
-        <div>
-          <label class="block text-gray-700 mb-2 font-semibold">City</label>
-          <input type="text" name="City" placeholder="Your City"
-            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <!-- Automate -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-indigo-500 hover:-translate-y-1 transition">
+          <i data-lucide="robot" class="w-10 h-10 text-indigo-500 mb-4"></i>
+          <h3 class="text-2xl font-bold mb-3">Automate</h3>
+          <p class="text-gray-600">Transforming industries with automation.</p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="mt-6">
-        <label class="block text-gray-700 mb-2 font-semibold">Message</label>
-        <textarea name="message" placeholder="Write your message here..." rows="5" required
-          class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+  <!-- 🧠 ABOUT SECTION -->
+  <section class="py-16 sm:py-24 bg-gray-50" id="about">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-extrabold text-center mb-12">
+        The <span class="text-primary">Robo Bharat</span> Difference
+      </h2>
+      <!-- Key Highlights -->
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-bold mb-3 text-primary">Indigenous Excellence</h3>
+          <p class="text-gray-600">100% Made in India — promoting Atmanirbhar Bharat.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-bold mb-3 text-accent">Integrated Ecosystem</h3>
+          <p class="text-gray-600">Education + R&D + Industry = Complete ecosystem.</p>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="mt-8 text-center">
-        <button type="submit"
-          class="bg-indigo-600 text-white font-semibold px-8 py-3 rounded-xl hover:bg-indigo-700 transition duration-300 shadow-md">
-          Send Message
-        </button>
-      </div>
-    </form>
-  </div>
-</section>
+  <!-- 📞 CONTACT SECTION -->
+  <section id="contact" class="bg-gray-50 py-16">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">Contact Us</h2>
+      <p class="text-gray-600 mb-10">We’d love to connect and innovate together.</p>
 
-     <!-- Floating WhatsApp -->
-  <a href="https://wa.me/+918810543535" target="_blank" class="whatsapp-float">
-    💬
-  </a>
+      <!-- 🧾 CONTACT FORM -->
+      <form action="https://formspree.io/f/mzzjlddo" method="POST" class="bg-white shadow-lg rounded-2xl p-8 text-left border border-gray-200">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-gray-700 mb-2 font-semibold">Full Name</label>
+            <input type="text" name="name" required class="w-full border rounded-lg px-4 py-3">
+          </div>
 
+          <div>
+            <label class="block text-gray-700 mb-2 font-semibold">Email Address</label>
+            <input type="email" name="email" required class="w-full border rounded-lg px-4 py-3">
+          </div>
+
+          <div>
+            <label class="block text-gray-700 mb-2 font-semibold">Designation</label>
+            <input type="text" name="designation" class="w-full border rounded-lg px-4 py-3">
+          </div>
+
+          <div>
+            <label class="block text-gray-700 mb-2 font-semibold">Contact Number</label>
+            <input type="tel" name="contact" required class="w-full border rounded-lg px-4 py-3">
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <label class="block text-gray-700 mb-2 font-semibold">Message</label>
+          <textarea name="message" rows="5" required class="w-full border rounded-lg px-4 py-3"></textarea>
+        </div>
+
+        <div class="mt-8 text-center">
+          <button type="submit" class="bg-indigo-600 text-white font-semibold px-8 py-3 rounded-xl hover:bg-indigo-700 transition">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- 💬 FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/+918810543535" target="_blank" class="whatsapp-float">💬</a>
+  <style>
+    /* 🟢 WhatsApp Button Style */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      font-size: 28px;
+      border-radius: 50%;
+      padding: 14px 16px;
+      box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+      text-decoration: none;
+      z-index: 9999;
+      transition: transform 0.2s ease-in-out;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+  </style>
+
+  <!-- ⚙️ JAVASCRIPT -->
   <script>
-    // Preloader
-    window.addEventListener("load", () => {
-      document.getElementById("preloader").style.display = "none";
-    });
+    lucide.createIcons(); // 🎨 Activates icons
 
-    // Form success message
-    const form = document.querySelector("form");
-    form.addEventListener("submit", function(e) {
-      setTimeout(() => {
-        document.getElementById("formSuccess").classList.remove("hidden");
-      }, 1000);
+    // 📱 Mobile Menu Toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
     });
   </script>
-</body>
-</html>
 
-
-  <!-- Footer -->
+  <!-- 🦾 FOOTER -->
   <footer class="bg-gray-900 text-white py-10">
     <div class="max-w-7xl mx-auto px-4 text-center">
       <p class="text-lg mb-4 font-semibold">Robo Bharat Technologies</p>
@@ -381,24 +269,6 @@
       <p class="text-sm text-gray-500">&copy; 2025 Robo Bharat Technologies. All rights reserved.</p>
     </div>
   </footer>
-
-  <!-- Scripts -->
-  <script>
-    lucide.createIcons();
-
-    // Mobile menu toggle
-    const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-
-    // Modal toggle
-    function toggleLoginModal() {
-      const modal = document.getElementById("loginModal");
-      modal.classList.toggle("hidden");
-    }
-  </script>
 
 </body>
 </html>
